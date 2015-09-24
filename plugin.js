@@ -7,7 +7,7 @@
 
       var dialog = new CKEDITOR.dialogCommand(
         'iframelyDialog',
-        {allowedContent : 'div(iframely);iframe[*](*)'}
+        {allowedContent : 'div(iframely);iframe[*](*);a[!href, data-iframely-url, data-template]'}
       );
 
       editor.addCommand('iframely', dialog);
